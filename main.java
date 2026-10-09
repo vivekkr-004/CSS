@@ -7,7 +7,14 @@ public class main {
         p1.setColor("black");
         System.out.println(p1.color);
 
-        
+
+        creating an obj for bankacc
+        BankAccount = myAcc = new BankAccount ();
+        myAcc.Username = "vivek";
+        // myAcc.Password = 123; // error
+
+        myAcc.setPassword(1234); // accessed
+
 
     }
 }
@@ -24,5 +31,14 @@ class Pen {
     }
     void setTip(int newTip) {
         tip = newTip;
+    }
+}
+
+class BankAccount {
+    public String Username; 
+    private int Password; 
+
+    public void setPassword(int pwd) {
+        password = pwd;
     }
 }
